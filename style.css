@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+nav h1{
+    display: flex;
+    margin-right: 450px;
+    align-items: center;
+    color: #fff;
+    
+}
+
+nav {
+    background-color: rgb(86, 9, 187);
+    height: 80px;
+    display: flex;
+    justify-content: end;  
+    align-items: center;      
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+
+nav li {
+    position: relative; 
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 35px;
+    font-size: 16px;
+}
+
+nav li a:hover {
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border-bottom: 2px #fff ;
+    border-bottom-style: double;
+}
+
+
+.menu_legal {
+    display: none;
+    position: absolute;
+    background-color: rgb(86, 9, 187);
+    padding: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.menu:hover .menu_legal {
+    display: block;
+}
+
+
+.menu {
+    position: relative;
+}
+
+
+.landing-page{
+    margin: 0;
+    padding: 0;
+}
+
+.itens-landing img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itens-landing{
+    display: flex;
+    padding: 50px;
+}
+
+.texto-landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    text-align: center;
+    color: rgb(86, 9, 187);
+    font-size: 20px;
+}
+
+.texto-landing h2{
+    margin-bottom: 70px;
+    
+}
+
+
+.destaque {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.destaque a{
+    text-decoration: none;
+}
+
+
+
+@keyframes swayX {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+  }
+
+  
+
+.portugues{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgb(86, 9, 187);
+    color: #fff;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    animation: swayX 3s ease infinite;
+}
+
+.txt-port{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 50px;
+}
+
+.portugues img{
+    border-radius: 20px;
+    border: 5px solid #fff;
+    border-style: double;
+}
+
+.matematica{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #fff;
+    color: rgb(86, 9, 187);
+    padding: 50px;
+    box-shadow: 0 6px 15px rgb(86, 9, 187);
+    animation: swayX 2s ease infinite;
+    
+}
+
+.txt-mat{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 50px;
+}
+
+.matematica img{
+    border-radius: 20px;
+    border: 5px solid rgb(86, 9, 187);
+    border-style: double;
+}
+
+.fisica{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgb(86, 9, 187);
+    color: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    animation: swayX 3s ease infinite;
+}
+
+.txt-fisica{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 50px;
+}
+
+.fisica img{
+    border-radius: 20px;
+    border: 5px solid rgb(255, 255, 255);
+    border-style: double;
+
+}
+
+button{
+    border-radius: 9px;
+    background-color: rgb(86, 9, 187);
+    display: flex;
+    color: #fff;
+    padding: 8px;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 15px #fff;
+}
+
+.matematica button{
+    border-radius: 9px;
+    background-color: #fff;
+    display: flex;
+    color: rgb(86, 9, 187);
+    padding: 8px;
+    border: 2px solid rgb(86, 9, 187);
+    box-shadow: 0 2px 15px rgb(86, 9, 187);
+}
+
+.matematica button:hover{
+    background-color: rgb(86, 9, 187);
+    color: #fff;
+}
+.portugues button:hover{
+    background-color: #fff;
+    color: rgb(86, 9, 187);
+}
+
+.fisica button:hover{
+    background-color: #fff;
+    color: rgb(86, 9, 187);
+}
+
+@keyframes glowPulse {
+    0%, 100% {
+      box-shadow: 0 0 0 rgba(0,0,0,0);
+    }
+    50% {
+      box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
+    }
+  }
+
+.portugues img:hover,
+.matematica img:hover,
+.fisica img:hover{
+    animation: glowPulse 2s ease infinite;
+}
+
+footer{
+    color: #fff;
+    background: rgb(86, 9, 187);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100px;
+    font-size: 10px;
+    border-top: groove;
+    
+}
